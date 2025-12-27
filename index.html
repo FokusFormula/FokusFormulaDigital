@@ -418,7 +418,8 @@ const obs=new IntersectionObserver(e=>{
     }
   });
 },{threshold:.2});
-document.querySelectorAll("section").forEach(s=>obs.observe(s));
+document.querySelectorAll("section, .fade-offer").forEach(el=>obs.observe(el));
+
 </script>
 
 </body>
